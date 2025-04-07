@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="css.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 40px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="image">
+    <img src="images/logo.svg">
+  </div>
+  <div class="wrapper">
+    <div class="left-section">
+      <div class="payment">
+        <p class="payment-text" >Bill</p>
+        <div class="input-container">
+          <div class="currency-symbol"><img src="images/icon-dollar.svg"></img></div>
+          <input class="amount-input" type="text" placeholder="0">
+        </div>
+      </div>
+      <div class="tip-section">
+        <p class="payment-text">Select tip %</p>
+        <div class="tip-grid">
+          <p id="tip-option" data-num="0.05">5%</p>
+          <p id="tip-option" data-num="0.1">10%</p>
+          <p id="tip-option" data-num="0.15">15%</p>
+          <p id="tip-option" data-num="0.25">25%</p>
+          <p id="tip-option" data-num="0.5">50%</p>
+          <input class="custom-tip" id="tip-option" style="width: 30%; height: 44px;background-color: hsl(189, 47%, 97%);" type="text" placeholder="Custom">
+        </div>
+      </div>
+      <div class="payment">
+        <div class="paragraph">
+        <p>Number of People</p>
+        <p class="payment-p" id="payment-p" >con't be 0</p>
+        </div>
+        <div class="input-container">
+          <div class="user-icon"><img src="images/icon-person.svg"></img></div>
+          <input class="amount-input" id="Person-input" type="text" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="result-box">
+        <div class="result-label">
+          <span style="color: white;">Tip Amount</span> <br>
+          <span style="color: rgba(255, 255, 255, 0.438);">/ Person</span>
+        </div>
+        <div class="value-container">
+          <p class="currency-label">$</p>
+          <p class="result-value" id="result">0.00</p>
+        </div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">
+          <span style="color: white;">Total</span> <br>
+          <span style="color: rgba(255, 255, 255, 0.438);">/ Person</span>
+        </div>
+        <div class="value-container">
+          <p class="currency-label">$</p>
+          <p class="result-value_2">0.00</p>
+        </div>
+      </div>
+      <div class="separator" style="height: 123px;"></div>
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+<script src="tp.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ech-ChaRa Mohamed</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 25px;
+    background-color: hsl(0, 100%, 100%);
+    border:1px solid;
+    border-radius: 20px ;
+    
+}
+main{
+    background-color: hsl(183, 100%, 15%);
+    position: absolute;
+    top: 70px;
+    left: 200px;
+}
+section button{
+    display: grid;
+}
+section input{
+    display: block;
+}
