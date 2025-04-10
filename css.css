@@ -157,6 +157,8 @@ button#reset {
     .wrapper{
         display: block;
         height: fit-content;
+        justify-content: center; 
+        align-items: center 
     }
     .left-section{
         padding-block: 20px;
